@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services – Tech Tandhwal LLP</title>
+  <meta name="description" content="Industrial automation, PLC programming, panel repair, camera automation, software services by Tech Tandhwal LLP, Bahadurgarh Haryana." />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .process-steps {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 0; margin-top: 56px;
+      border: 1px solid var(--border); border-radius: 10px;
+      overflow: hidden;
+    }
+    .process-step {
+      padding: 36px 28px;
+      background: var(--card-bg);
+      border-right: 1px solid var(--border);
+      position: relative;
+    }
+    .process-step:last-child { border-right: none; }
+    .step-num {
+      font-family: var(--font-mono); font-size: 0.7rem;
+      color: var(--accent); letter-spacing: 0.1em;
+      margin-bottom: 16px; display: block;
+    }
+    .step-icon { font-size: 2rem; margin-bottom: 14px; display: block; }
+    .process-step h3 {
+      font-family: var(--font-display); font-size: 1.05rem;
+      font-weight: 700; margin-bottom: 10px;
+    }
+    .process-step p { font-size: 0.84rem; color: var(--muted); line-height: 1.6; }
+
+    .service-detail-grid {
+      display: grid; grid-template-columns: 1.2fr 1fr;
+      gap: 56px; margin-top: 48px; align-items: start;
+    }
+    .service-big-card {
+      background: var(--card-bg); border: 1px solid var(--border);
+      border-radius: 10px; padding: 40px;
+    }
+    .service-big-card .service-icon { font-size: 2.8rem; margin-bottom: 24px; }
+    .service-big-card h3 {
+      font-family: var(--font-display); font-size: 1.5rem; font-weight: 700;
+      margin-bottom: 14px;
+    }
+    .service-big-card p { font-size: 0.9rem; color: var(--muted); line-height: 1.7; margin-bottom: 20px; }
+
+    .brands-strip {
+      background: var(--navy-mid);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 60px 5%;
+    }
+    .brands-grid {
+      display: flex; flex-wrap: wrap; gap: 16px;
+      justify-content: center; margin-top: 36px;
+    }
+    .brand-pill {
+      font-family: var(--font-display); font-weight: 700;
+      font-size: 0.95rem; letter-spacing: 0.04em;
+      padding: 12px 24px;
+      background: rgba(0,200,255,0.06); border: 1px solid var(--border);
+      border-radius: 6px; color: var(--white);
+      transition: all 0.2s;
+    }
+    .brand-pill:hover { border-color: var(--accent); color: var(--accent); }
+
+    @media(max-width:900px){
+      .process-steps { grid-template-columns: 1fr 1fr; }
+      .process-step { border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+      .service-detail-grid { grid-template-columns: 1fr; }
+    }
+    @media(max-width:500px){
+      .process-steps { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-icon">TT</div>
+    <div class="nav-logo-text">
+      <span class="nav-logo-name">Tech Tandhwal</span>
+      <span class="nav-logo-tag">LLP · Est. Bahadurgarh</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="services.html" class="active">Services</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+  </ul>
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="section-label">What We Do</div>
+  <h1 class="section-title">End-to-End Industrial Services</h1>
+  <p class="section-desc">From initial concept and engineering to on-site installation, commissioning and annual maintenance — we stay with you through the entire lifecycle.</p>
+</div>
+
+<!-- SERVICES GRID -->
+<section>
+  <div class="section-label">Core Services</div>
+  <h2 class="section-title">Our Expertise</h2>
+
+  <div class="services-grid" style="margin-top:48px;">
+
+    <div class="service-card fade-up">
+      <span class="service-icon">🏭</span>
+      <h3>Industrial Automation</h3>
+      <p>Complete turnkey automation solutions for manufacturing plants. We design, supply, integrate and commission fully automated production lines tailored to your product and throughput requirements.</p>
+      <ul class="service-list">
+        <li>Line integration & layout design</li>
+        <li>Pneumatic & hydraulic systems</li>
+        <li>Conveyor & material handling</li>
+        <li>Sensor & actuator integration</li>
+        <li>Safety system design (E-stop, light curtains)</li>
+      </ul>
+    </div>
+
+    <div class="service-card fade-up">
+      <span class="service-icon">📡</span>
+      <h3>PLC Programming & SCADA</h3>
+      <p>Expert programming for all major PLC platforms. From simple sequence logic to complex multi-axis motion control, we handle the full software lifecycle — design, coding, simulation, commissioning.</p>
+      <ul class="service-list">
+        <li>Siemens TIA Portal (S7-300/400/1200/1500)</li>
+        <li>Allen Bradley (Studio 5000, RSLogix)</li>
+        <li>Mitsubishi GX Works</li>
+        <li>Delta, Schneider, Omron</li>
+        <li>SCADA & HMI development</li>
+      </ul>
+    </div>
+
+    <div class="service-card fade-up">
+      <span class="service-icon">🔧</span>
+      <h3>PLC Panel Repair & AMC</h3>
+      <p>Fast turnaround repair services for faulty PLC panels, drives and automation equipment. Annual Maintenance Contracts available for guaranteed uptime across your plant.</p>
+      <ul class="service-list">
+        <li>PLC CPU, I/O module replacement</li>
+        <li>VFD / servo drive repair</li>
+        <li>Panel rewiring & upgrades</li>
+        <li>Preventive maintenance visits</li>
+        <li>24×7 emergency breakdown support</li>
+      </ul>
+    </div>
+
+    <div class="service-card fade-up">
+      <span class="service-icon">🔬</span>
+      <h3>PCB Test Setup Design</h3>
+      <p>Custom test fixture and station design for electronics manufacturers. We work from your Gerber files, BOM and test specifications to deliver production-ready ICT and FCT setups.</p>
+      <ul class="service-list">
+        <li>Fixture design from Gerbers</li>
+        <li>Pogo-pin layout verification</li>
+        <li>Pneumatic actuation systems</li>
+        <li>Test software development</li>
+        <li>Yield analysis & optimization</li>
+      </ul>
+    </div>
+
+    <div class="service-card fade-up">
+      <span class="service-icon">📷</span>
+      <h3>Camera-Based Automation</h3>
+      <p>Machine vision and AI-powered inspection systems for quality control on production lines. Detect defects, verify labels, read codes and measure dimensions — automatically, at production speed.</p>
+      <ul class="service-list">
+        <li>Defect detection & classification</li>
+        <li>Presence / absence verification</li>
+        <li>Barcode & QR code reading</li>
+        <li>OCR — label & date code reading</li>
+        <li>Dimensional measurement</li>
+      </ul>
+    </div>
+
+    <div class="service-card fade-up">
+      <span class="service-icon">💻</span>
+      <h3>Industrial Software Services</h3>
+      <p>Custom software development for industrial applications — MES integration, data collection, reporting dashboards, test record management and OEE monitoring tools.</p>
+      <ul class="service-list">
+        <li>Test data management software</li>
+        <li>Production reporting dashboards</li>
+        <li>MES / ERP data integration</li>
+        <li>OEE monitoring systems</li>
+        <li>Custom HMI & GUI development</li>
+      </ul>
+    </div>
+
+    <div class="service-card fade-up">
+      <span class="service-icon">🏗️</span>
+      <h3>Special Purpose Machine Design</h3>
+      <p>Conceptualization and manufacturing of SPMs for your specific production challenge. Our engineering team handles mechanical design, electrical integration and final commissioning.</p>
+      <ul class="service-list">
+        <li>Mechanical design (SolidWorks / AutoCAD)</li>
+        <li>Fabrication & assembly</li>
+        <li>Pneumatic / servo actuation</li>
+        <li>Electrical panel integration</li>
+        <li>On-site commissioning & training</li>
+      </ul>
+    </div>
+
+    <div class="service-card fade-up">
+      <span class="service-icon">🎓</span>
+      <h3>Training & Consultancy</h3>
+      <p>Hands-on automation training for your engineering team. PLC programming workshops, SCADA training, preventive maintenance programs and automation consultancy for new projects.</p>
+      <ul class="service-list">
+        <li>PLC programming workshops</li>
+        <li>SCADA / HMI operator training</li>
+        <li>Preventive maintenance training</li>
+        <li>Automation project consultancy</li>
+        <li>Troubleshooting & fault analysis</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- HOW WE WORK -->
+<section style="padding-top:0;">
+  <div class="section-label">Our Process</div>
+  <h2 class="section-title">How We Deliver</h2>
+  <div class="process-steps">
+    <div class="process-step fade-up">
+      <span class="step-num">// STEP 01</span>
+      <span class="step-icon">💬</span>
+      <h3>Requirement Discussion</h3>
+      <p>We start by understanding your production challenge, constraints, cycle time and quality targets through a detailed consultation.</p>
+    </div>
+    <div class="process-step fade-up">
+      <span class="step-num">// STEP 02</span>
+      <span class="step-icon">📐</span>
+      <h3>Design & Proposal</h3>
+      <p>Our engineers create mechanical layouts, electrical schematics and a detailed technical proposal with timeline and cost breakdown.</p>
+    </div>
+    <div class="process-step fade-up">
+      <span class="step-num">// STEP 03</span>
+      <span class="step-icon">🔨</span>
+      <h3>Manufacturing & Testing</h3>
+      <p>Fabrication, assembly and full in-house testing at our Bahadurgarh facility before dispatch. Factory acceptance testing with your team if required.</p>
+    </div>
+    <div class="process-step fade-up">
+      <span class="step-num">// STEP 04</span>
+      <span class="step-icon">🚀</span>
+      <h3>Installation & Support</h3>
+      <p>On-site installation, commissioning, operator training and warranty support. Long-term AMC available for continued peace of mind.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS WE WORK WITH -->
+<section class="brands-strip">
+  <div class="section-label">PLC Brands We Support</div>
+  <h2 class="section-title">Platform Expertise</h2>
+  <p class="section-desc">We design, program, commission and repair across all major industrial automation platforms.</p>
+  <div class="brands-grid">
+    <div class="brand-pill">Siemens</div>
+    <div class="brand-pill">Allen Bradley</div>
+    <div class="brand-pill">Mitsubishi</div>
+    <div class="brand-pill">Delta</div>
+    <div class="brand-pill">Schneider</div>
+    <div class="brand-pill">Omron</div>
+    <div class="brand-pill">Keyence</div>
+    <div class="brand-pill">Cognex</div>
+    <div class="brand-pill">Beckhoff</div>
+    <div class="brand-pill">ABB</div>
+    <div class="brand-pill">Fanuc</div>
+    <div class="brand-pill">Yaskawa</div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="text-align:center; background: radial-gradient(ellipse 70% 80% at 50% 50%, rgba(0,120,200,0.12) 0%, transparent 70%), var(--navy); padding:80px 5%;">
+  <div class="section-label" style="justify-content:center;">Start Your Project</div>
+  <h2 class="section-title" style="max-width:560px;margin:0 auto 16px;">Have an Automation Challenge?</h2>
+  <p class="section-desc" style="margin:0 auto 40px;">Send us your requirements. Our engineering team will review and respond within 24 hours with a customized proposal.</p>
+  <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+    <a href="contact.html" class="btn-primary">Get in Touch</a>
+    <a href="products.html" class="btn-outline">View Products</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">TT</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">Tech Tandhwal</span>
+          <span class="nav-logo-tag">LLP · Bahadurgarh</span>
+        </div>
+      </a>
+      <p>End-to-end industrial automation and manufacturing services from Bahadurgarh, Haryana.</p>
+    </div>
+    <div class="footer-col"><h4>Products</h4><ul>
+      <li><a href="products.html">PCB Testing Setups</a></li>
+      <li><a href="products.html">FCT Machines</a></li>
+      <li><a href="products.html">Conveyors</a></li>
+      <li><a href="products.html">PLC Panels</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Services</h4><ul>
+      <li><a href="services.html">Industrial Automation</a></li>
+      <li><a href="services.html">PLC Programming</a></li>
+      <li><a href="services.html">Panel Repair & AMC</a></li>
+      <li><a href="services.html">Camera Automation</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul>
+        <li><a href="tel:+918178385290">+91 8178385290</a></li>
+        <li><a href="mailto:techtandhwal@gmail.com">techtandhwal@gmail.com</a></li>
+        <li><a href="contact.html">Get a Quote</a></li>
+        <li><a href="contact.html">Find Us</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 <span>Tech Tandhwal LLP</span>. 36 Jhajjar Road, Chhara, Bahadurgarh, Haryana – 124504</p>
+    <p>Made with ⚡ for Industry</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

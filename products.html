@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products – Tech Tandhwal LLP</title>
+  <meta name="description" content="PCB Testing Setups, FCT Machines, PLC Panels, Conveyors, Special Purpose Machines by Tech Tandhwal LLP, Bahadurgarh." />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .filter-bar {
+      display: flex; gap: 10px; flex-wrap: wrap;
+      margin: 48px 0 32px;
+    }
+    .filter-btn {
+      font-family: var(--font-mono); font-size: 0.72rem;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      padding: 8px 18px; border-radius: 4px;
+      border: 1px solid var(--border);
+      background: transparent; color: var(--muted);
+      cursor: pointer; transition: all 0.2s;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--accent); color: var(--navy);
+      border-color: var(--accent);
+    }
+    .product-card[data-cat] { transition: opacity 0.3s, transform 0.3s; }
+    .product-card.hidden { opacity: 0; pointer-events: none; transform: scale(0.96); display:none; }
+
+    .product-detail {
+      background: var(--card-bg);
+      border: 1px solid var(--border); border-radius: 10px;
+      margin-top: 80px; padding: 48px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 48px;
+      align-items: start;
+    }
+    .product-detail img { width: 100%; border-radius: 8px; border: 1px solid var(--border); }
+    .product-detail h3 {
+      font-family: var(--font-display); font-size: 1.6rem; font-weight: 700;
+      margin-bottom: 16px; color: var(--accent);
+    }
+    .product-detail p { font-size: 0.92rem; color: var(--muted); line-height: 1.7; margin-bottom: 20px; }
+    .spec-table { width: 100%; border-collapse: collapse; margin-top: 16px; }
+    .spec-table td {
+      padding: 10px 12px; font-size: 0.85rem;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .spec-table td:first-child { color: var(--muted); width: 40%; }
+    .spec-table td:last-child { color: var(--white); font-weight: 500; }
+
+    @media(max-width:768px){
+      .product-detail { grid-template-columns: 1fr; padding:28px; gap:28px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-icon">TT</div>
+    <div class="nav-logo-text">
+      <span class="nav-logo-name">Tech Tandhwal</span>
+      <span class="nav-logo-tag">LLP · Est. Bahadurgarh</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html" class="active">Products</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+  </ul>
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="section-label">Our Portfolio</div>
+  <h1 class="section-title">Products We Manufacture</h1>
+  <p class="section-desc">Every product is engineered to specification — designed in-house, fabricated locally, tested rigorously.</p>
+</div>
+
+<section>
+  <!-- FILTER -->
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All Products</button>
+    <button class="filter-btn" data-filter="testing">PCB Testing</button>
+    <button class="filter-btn" data-filter="plc">PLC & Panels</button>
+    <button class="filter-btn" data-filter="conveyor">Conveyors</button>
+    <button class="filter-btn" data-filter="spm">Special Purpose</button>
+    <button class="filter-btn" data-filter="vision">Camera / Vision</button>
+  </div>
+
+  <!-- GRID -->
+  <div class="products-grid">
+
+    <div class="product-card fade-up" data-cat="testing">
+      <div class="product-img">
+        <img src="img/TESTING_FIXTURE_01.png" alt="PCB Testing Fixture"
+          onerror="this.parentElement.innerHTML='<div class=\'product-img-placeholder\'>🔬</div>'" />
+        <div class="product-img-overlay">PCB Testing</div>
+      </div>
+      <div class="product-body">
+        <h3>PCB Testing Fixtures</h3>
+        <p>Spring-pin bed-of-nails jigs for in-circuit and functional testing. Precision-machined frames with pneumatic or manual actuation, supporting single and multi-board fixtures.</p>
+        <div class="product-tags">
+          <span class="tag">ICT</span><span class="tag">Bed of Nails</span><span class="tag">Custom</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card fade-up" data-cat="testing">
+      <div class="product-img">
+        <img src="img/fct_00.png" alt="FCT Machine"
+          onerror="this.parentElement.innerHTML='<div class=\'product-img-placeholder\'>⚡</div>'" />
+        <div class="product-img-overlay">FCT</div>
+      </div>
+      <div class="product-body">
+        <h3>Functional Test Machines (FCT)</h3>
+        <p>Automated FCT systems integrating pneumatic pressing, multi-channel signal measurement, barcode scanning and PC-based data logging. Ready for production line integration.</p>
+        <div class="product-tags">
+          <span class="tag">Pneumatic</span><span class="tag">Automated</span><span class="tag">Data Logging</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card fade-up" data-cat="testing">
+      <div class="product-img">
+        <img src="img/fct_01.png" alt="ICT Testing"
+          onerror="this.parentElement.innerHTML='<div class=\'product-img-placeholder\'>🧪</div>'" />
+        <div class="product-img-overlay">ICT/FCT</div>
+      </div>
+      <div class="product-body">
+        <h3>ICT / In-Circuit Test Setups</h3>
+        <p>Complete in-circuit test stations with high-density spring probes, guided probe testing support and comprehensive test coverage for populated PCB assemblies.</p>
+        <div class="product-tags">
+          <span class="tag">ICT</span><span class="tag">High Density</span><span class="tag">Production Grade</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card fade-up" data-cat="conveyor">
+      <div class="product-img">
+        <img src="img/conveyor_01.png" alt="Belt Conveyor"
+          onerror="this.parentElement.innerHTML='<div class=\'product-img-placeholder\'>🏗️</div>'" />
+        <div class="product-img-overlay">Conveyor</div>
+      </div>
+      <div class="product-body">
+        <h3>Belt Conveyor Systems</h3>
+        <p>Industrial belt conveyors with variable speed VFD drives, adjustable width guides, inclined sections and heavy-duty MS or SS construction for assembly & logistics lines.</p>
+        <div class="product-tags">
+          <span class="tag">VFD Driven</span><span class="tag">Custom Length</span><span class="tag">MS / SS</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card fade-up" data-cat="conveyor">
+      <div class="product-img">
+        <img src="img/conveyor_03.png" alt="Roller Conveyor"
+          onerror="this.parentElement.innerHTML='<div class=\'product-img-placeholder\'>🔩</div>'" />
+        <div class="product-img-overlay">Roller</div>
+      </div>
+      <div class="product-body">
+        <h3>Roller Conveyor Systems</h3>
+        <p>Gravity and powered roller conveyors for material handling, pallet transfer and inter-station movement. Available in GI, SS and aluminium profiles.</p>
+        <div class="product-tags">
+          <span class="tag">Gravity</span><span class="tag">Powered</span><span class="tag">Pallet</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card fade-up" data-cat="plc">
+      <div class="product-img">
+       <img src="img/plc_panel.png" alt="Roller Conveyor"
+          onerror="this.parentElement.innerHTML='<div class=\'product-img-placeholder\'>🔩</div>'" />
+       
+        <div class="product-img-overlay">PLC</div>
+      </div>
+      <div class="product-body">
+        <h3>PLC Control Panels</h3>
+        <p>Custom PLC panel design and manufacturing using Siemens S7, Allen Bradley, Mitsubishi, Delta and Schneider platforms. Complete with HMI, SCADA interface and field wiring.</p>
+        <div class="product-tags">
+          <span class="tag">Siemens</span><span class="tag">Allen Bradley</span><span class="tag">Mitsubishi</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card fade-up" data-cat="plc">
+      <div class="product-img">
+      <img src="img/vfd_panel.png" alt="VFD Panels"
+          onerror="this.parentElement.innerHTML='<div class=\'product-img-placeholder\'>🔩</div>'" />
+       
+        <div class="product-img-overlay">VFD Panels</div>
+      </div>
+      <div class="product-body">
+        <h3>MCC & VFD Panels</h3>
+        <p>Motor Control Centers and Variable Frequency Drive panels for industrial motors. Designed per IS standards with full protection and interlocking as required.</p>
+        <div class="product-tags">
+          <span class="tag">MCC</span><span class="tag">VFD</span><span class="tag">IS Standard</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card fade-up" data-cat="spm">
+      <div class="product-img">
+        <div class="product-img-placeholder">🤖</div>
+        <div class="product-img-overlay">SPM</div>
+      </div>
+      <div class="product-body">
+        <h3>Special Purpose Machines</h3>
+        <p>Fully custom SPMs for pressing, riveting, marking, dispensing, welding assistance and assembly automation. Designed around your product and cycle time requirements.</p>
+        <div class="product-tags">
+          <span class="tag">Pressing</span><span class="tag">Marking</span><span class="tag">Assembly</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card fade-up" data-cat="vision">
+      <div class="product-img">
+        <img src="img/camera_vision.png" alt="camera_vision"
+          onerror="this.parentElement.innerHTML='<div class=\'product-img-placeholder\'>🔩</div>'" />
+       
+        <div class="product-img-overlay">Vision</div>
+      </div>
+      <div class="product-body">
+        <h3>Camera-Based Inspection Systems</h3>
+        <p>Machine vision systems for defect detection, presence/absence verification, barcode reading, OCR and dimensional measurement on production lines.</p>
+        <div class="product-tags">
+          <span class="tag">Defect Detection</span><span class="tag">OCR</span><span class="tag">Barcode</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card fade-up" data-cat="spm">
+      <div class="product-img">
+        <div class="product-img-placeholder">🔌</div>
+        <div class="product-img-overlay">EOL</div>
+      </div>
+      <div class="product-body">
+        <h3>End-of-Line Test Stations</h3>
+        <p>Complete EOL test benches combining functional, leakage, electrical safety and dimensional testing into a single automated workstation with pass/fail reporting.</p>
+        <div class="product-tags">
+          <span class="tag">EOL</span><span class="tag">Safety Test</span><span class="tag">Reporting</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FEATURED DETAIL SECTION -->
+  <div class="product-detail fade-up" style="margin-top:80px;">
+    <div>
+      <img src="img/TESTING_FIXTURE_01.png" alt="Tech Tandhwal Testing Fixture"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+        style="display:block" />
+      <div style="display:none; width:100%; aspect-ratio:4/3; background:var(--navy-mid); border-radius:8px; align-items:center; justify-content:center; font-size:5rem; border:1px solid var(--border);">🔬</div>
+    </div>
+    <div>
+      <h3>// Featured: PCB Testing Fixture</h3>
+      <p>Our flagship product — the custom PCB testing fixture — is the result of years of precision engineering. Used on production lines across automotive, consumer electronics and industrial electronics sectors.</p>
+      <p>Every fixture is designed from your Gerber files and mechanical drawings, with pogo-pin layout verified before manufacturing commences.</p>
+      <table class="spec-table">
+        <tr><td>Contact Pins</td><td>Pogo-Pin / Spring Probe (Coda, Everett Charles)</td></tr>
+        <tr><td>Actuation</td><td>Manual / Pneumatic (up to 6 bar)</td></tr>
+        <tr><td>Frame Material</td><td>Aluminium / Engineering Plastic</td></tr>
+        <tr><td>Accuracy</td><td>±0.05 mm pin placement</td></tr>
+        <tr><td>Lead Time</td><td>7–15 working days (from approved design)</td></tr>
+        <tr><td>Applications</td><td>ICT, FCT, Flying Probe support</td></tr>
+      </table>
+      <div style="margin-top:28px;">
+        <a href="contact.html" class="btn-primary">Request This Product</a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">TT</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">Tech Tandhwal</span>
+          <span class="nav-logo-tag">LLP · Bahadurgarh</span>
+        </div>
+      </a>
+      <p>Manufacturers of PCB testing setups, special purpose machines, PLC panels, conveyors and industrial automation systems.</p>
+    </div>
+    <div class="footer-col"><h4>Products</h4><ul>
+      <li><a href="products.html">PCB Testing Setups</a></li>
+      <li><a href="products.html">FCT Machines</a></li>
+      <li><a href="products.html">Conveyors</a></li>
+      <li><a href="products.html">PLC Panels</a></li>
+      <li><a href="products.html">Special Purpose Machines</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Services</h4><ul>
+      <li><a href="services.html">Industrial Automation</a></li>
+      <li><a href="services.html">PLC Programming</a></li>
+      <li><a href="services.html">Panel Repair & AMC</a></li>
+      <li><a href="services.html">Camera Automation</a></li>
+      <li><a href="services.html">Software Services</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul>
+        <li><a href="tel:+918178385290">+91 8178385290</a></li>
+        <li><a href="mailto:techtandhwal@gmail.com">techtandhwal@gmail.com</a></li>
+        <li><a href="contact.html">Get a Quote</a></li>
+        <li><a href="contact.html">Find Us</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 <span>Tech Tandhwal LLP</span>. 36 Jhajjar Road, Chhara, Bahadurgarh, Haryana – 124504</p>
+    <p>Made with ⚡ for Industry</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  // Filter logic
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.product-card[data-cat]');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      cards.forEach(c => {
+        if (f === 'all' || c.dataset.cat === f) { c.classList.remove('hidden'); }
+        else { c.classList.add('hidden'); }
+      });
+    });
+  });
+</script>
+</body>
+</html>

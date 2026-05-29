@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – Tech Tandhwal LLP</title>
+  <meta name="description" content="Contact Tech Tandhwal LLP for PCB testing, PLC panels, industrial automation and special purpose machines. Bahadurgarh, Haryana." />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .faq-section { margin-top: 80px; }
+    .faq-item {
+      border: 1px solid var(--border); border-radius: 8px;
+      margin-bottom: 12px; overflow: hidden;
+    }
+    .faq-q {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 20px 24px; cursor: pointer;
+      font-family: var(--font-display); font-weight: 600; font-size: 1rem;
+      background: var(--card-bg);
+      transition: background 0.2s;
+      user-select: none;
+    }
+    .faq-q:hover { background: rgba(0,200,255,0.06); }
+    .faq-q .faq-arrow { color: var(--accent); font-size: 1.2rem; transition: transform 0.3s; }
+    .faq-item.open .faq-arrow { transform: rotate(45deg); }
+    .faq-a {
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s;
+      padding: 0 24px;
+      font-size: 0.9rem; color: var(--muted); line-height: 1.7;
+    }
+    .faq-item.open .faq-a { max-height: 200px; padding: 0 24px 20px; }
+
+    .contact-chips {
+      display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 40px;
+    }
+    .chip {
+      display: flex; align-items: center; gap: 10px;
+      background: rgba(0,200,255,0.08); border: 1px solid var(--border);
+      border-radius: 6px; padding: 14px 20px;
+      font-size: 0.9rem;
+    }
+    .chip span:first-child { font-size: 1.3rem; }
+    .chip a { color: var(--white); text-decoration: none; }
+    .chip a:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-icon">TT</div>
+    <div class="nav-logo-text">
+      <span class="nav-logo-name">Tech Tandhwal</span>
+      <span class="nav-logo-tag">LLP · Est. Bahadurgarh</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html" class="nav-cta active">Contact Us</a></li>
+  </ul>
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="section-label">Reach Out</div>
+  <h1 class="section-title">Let's Work Together</h1>
+  <p class="section-desc">Share your automation requirement or request a quote. We respond within 24 business hours.</p>
+</div>
+
+<section>
+  <!-- QUICK CHIPS -->
+  <div class="contact-chips">
+    <div class="chip">
+      <span>📞</span>
+      <div>
+        <div style="font-size:0.72rem;color:var(--muted);font-family:var(--font-mono);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:2px;">Phone</div>
+        <a href="tel:+918178385290">+91 8178385290</a>
+      </div>
+    </div>
+    <div class="chip">
+      <span>📧</span>
+      <div>
+        <div style="font-size:0.72rem;color:var(--muted);font-family:var(--font-mono);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:2px;">Email</div>
+        <a href="mailto:techtandhwal@gmail.com">techtandhwal@gmail.com</a>
+      </div>
+    </div>
+    <div class="chip">
+      <span>💬</span>
+      <div>
+        <div style="font-size:0.72rem;color:var(--muted);font-family:var(--font-mono);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:2px;">WhatsApp</div>
+        <a href="https://wa.me/8178385290" target="_blank">Chat on WhatsApp</a>
+      </div>
+    </div>
+    <div class="chip">
+      <span>⏱️</span>
+      <div>
+        <div style="font-size:0.72rem;color:var(--muted);font-family:var(--font-mono);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:2px;">Working Hours</div>
+        <span style="color:var(--white);">Mon–Sat: 9:00 AM – 6:30 PM</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTACT GRID -->
+  <div class="contact-grid">
+
+    <!-- INFO -->
+    <div>
+      <div class="section-label">Office & Factory</div>
+      <h2 class="section-title" style="font-size:1.8rem;">Find Us</h2>
+
+      <div class="contact-item" style="margin-top:28px;">
+        <div class="contact-icon-wrap">📍</div>
+        <div>
+          <h4>Registered Address</h4>
+          <p>36, Jhajjar Road Chhara, VPO Chhara,<br>
+          Jhajjar, Bahadurgarh, Haryana – 124504<br>
+          India</p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon-wrap">📞</div>
+        <div>
+          <h4>Phone</h4>
+          <p><a href="tel:+918178385290">+91 8178385290</a></p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon-wrap">📧</div>
+        <div>
+          <h4>Email</h4>
+          <p><a href="mailto:techtandhwal@gmail.com">techtandhwal@gmail.com</a></p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon-wrap">💬</div>
+        <div>
+          <h4>WhatsApp</h4>
+          <p><a href="https://wa.me/8178385290" target="_blank">Message us on WhatsApp →</a></p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon-wrap">🏢</div>
+        <div>
+          <h4>Entity</h4>
+          <p>Tech Tandhwal LLP<br>Registered Limited Liability Partnership, India</p>
+        </div>
+      </div>
+
+      <!-- Industries served -->
+      <div style="margin-top:36px; padding:24px; background:var(--card-bg); border:1px solid var(--border); border-radius:8px;">
+        <h4 style="font-family:var(--font-display);font-weight:700;margin-bottom:16px;color:var(--accent);font-size:0.9rem;text-transform:uppercase;letter-spacing:0.08em;">Industries We Serve</h4>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;">
+          <span class="tag">Automotive Electronics</span>
+          <span class="tag">Consumer Electronics</span>
+          <span class="tag">Industrial Equipment</span>
+          <span class="tag">FMCG / Packaging</span>
+          <span class="tag">Pharma</span>
+          <span class="tag">Defence & Aerospace</span>
+          <span class="tag">Lighting</span>
+          <span class="tag">Power & Energy</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FORM -->
+    <div class="contact-form fade-up">
+      <h3>// Send Us a Message</h3>
+      <form id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name *</label>
+            <input type="text" placeholder="Rajesh Kumar" required />
+          </div>
+          <div class="form-group">
+            <label>Company Name</label>
+            <input type="text" placeholder="ABC Industries Pvt Ltd" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Phone / WhatsApp *</label>
+            <input type="tel" placeholder="+91 98765 43210" required />
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="rajesh@abcindustries.com" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Requirement Type *</label>
+          <select required>
+            <option value="" disabled selected>Select your requirement</option>
+            <option>PCB Testing Fixture / Setup</option>
+            <option>Functional Test Machine (FCT)</option>
+            <option>PLC Panel – New Manufacturing</option>
+            <option>PLC Panel – Repair / AMC</option>
+            <option>Industrial Conveyor</option>
+            <option>Special Purpose Machine</option>
+            <option>Camera / Vision Inspection</option>
+            <option>PLC Programming / SCADA</option>
+            <option>Industrial Software</option>
+            <option>Other / General Enquiry</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Describe Your Requirement *</label>
+          <textarea placeholder="Please describe your requirement — include product details, quantity, cycle time targets, current setup (if any), and any other relevant specifications..." required></textarea>
+        </div>
+        <div class="form-group">
+          <label>How soon do you need it?</label>
+          <select>
+            <option value="">Not decided yet</option>
+            <option>Urgent – Within 2 weeks</option>
+            <option>Within 1 month</option>
+            <option>1–3 months</option>
+            <option>3+ months / Planning stage</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-primary" style="width:100%;justify-content:center;padding:16px;">
+          Send Message →
+        </button>
+        <p style="font-size:0.78rem;color:var(--muted);margin-top:12px;text-align:center;">
+          We typically respond within 24 business hours. For urgent queries, call or WhatsApp directly.
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- MAP -->
+  <div class="map-wrap fade-up">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.0!2d76.9300!3d28.6800!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDQwJzQ4LjAiTiA3NsKwNTUnNDguMCJF!5e0!3m2!1sen!2sin!4v1699000000000!5m2!1sen!2sin"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      title="Tech Tandhwal LLP Location – Bahadurgarh, Haryana">
+    </iframe>
+  </div>
+
+  <!-- FAQ -->
+  <div class="faq-section">
+    <div class="section-label">Common Questions</div>
+    <h2 class="section-title">FAQs</h2>
+    <div style="margin-top:36px;">
+
+      <div class="faq-item">
+        <div class="faq-q">What information do I need to share to get a quote for a PCB testing fixture?
+          <span class="faq-arrow">+</span>
+        </div>
+        <div class="faq-a">Please share your PCB Gerber files (or layout drawing), the test points list, required probe type, expected production volume and preferred actuation method (manual or pneumatic). We'll design and quote accordingly.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">What is your typical lead time for a new machine or panel?
+          <span class="faq-arrow">+</span>
+        </div>
+        <div class="faq-a">Lead times depend on complexity. PCB test fixtures are typically 7–15 working days. PLC panels take 10–21 days. Special purpose machines range from 4–12 weeks depending on scope. We'll confirm an exact timeline with your quotation.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Do you offer Annual Maintenance Contracts (AMC) for panels and machines?
+          <span class="faq-arrow">+</span>
+        </div>
+        <div class="faq-a">Yes. We offer flexible AMC packages covering preventive maintenance visits, priority breakdown response, spare parts supply and software backup services. Contact us to discuss a plan suited to your plant.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Which PLC brands do you support for repair and programming?
+          <span class="faq-arrow">+</span>
+        </div>
+        <div class="faq-a">We support Siemens (S7-200/300/400/1200/1500), Allen Bradley (MicroLogix, CompactLogix, ControlLogix), Mitsubishi (FX, Q, iQ-R series), Delta, Schneider, Omron and more. Reach out even if your brand isn't listed — we can likely help.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Do you serve clients outside Haryana?
+          <span class="faq-arrow">+</span>
+        </div>
+        <div class="faq-a">Absolutely. Our products ship pan-India. We have served clients in Delhi NCR, Punjab, Rajasthan, Maharashtra, Gujarat and more. On-site installation and commissioning is available with travel at actuals.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">TT</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">Tech Tandhwal</span>
+          <span class="nav-logo-tag">LLP · Bahadurgarh</span>
+        </div>
+      </a>
+      <p>Precision industrial automation and manufacturing — PCB testing, PLC panels, special purpose machines and conveyors.</p>
+    </div>
+    <div class="footer-col"><h4>Products</h4><ul>
+      <li><a href="products.html">PCB Testing Setups</a></li>
+      <li><a href="products.html">FCT Machines</a></li>
+      <li><a href="products.html">Conveyors</a></li>
+      <li><a href="products.html">PLC Panels</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Services</h4><ul>
+      <li><a href="services.html">Industrial Automation</a></li>
+      <li><a href="services.html">PLC Programming</a></li>
+      <li><a href="services.html">Panel Repair & AMC</a></li>
+      <li><a href="services.html">Camera Automation</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul>
+        <li><a href="tel:+918178385290">+91 8178385290</a></li>
+        <li><a href="mailto:techtandhwal@gmail.com">techtandhwal@gmail.com</a></li>
+        <li><a href="contact.html">Get a Quote</a></li>
+        <li><a href="contact.html">Find Us</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 <span>Tech Tandhwal LLP</span>. 36 Jhajjar Road, Chhara, Bahadurgarh, Haryana – 124504</p>
+    <p>Made with ⚡ for Industry</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement;
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+</script>
+</body>
+</html>
